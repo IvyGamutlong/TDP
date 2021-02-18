@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<script src="https://cdm.freecodecamp.org/testable-projects-fcc/v1/bandle.js"></script>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS Documentation</title>
+	<link href="https://fonts.googleapis.com/css2? family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="techdoc.css">
+</head>
+<div class="main-body">
+	<nav id="navbar">
+		<header>JS Documentation</header>
+		<a href="#Introduction" class="nav-link">Introduction</a>
+		<a href="#JavaScript" class="nav-link">JavaScript</a>
+		<a href="#Variables" class="nav-link">Variables</a>
+		<a href="#Scope" class="nav-link">Scope</a>
+		<a href="#Functions" class="nav-link">Functions</a>
+	</nav>
+<main id="main-doc">
+	<section class="main-section" id="Introduction">
+		<header>Introduction</header>
+		<p>JavaScript is a programming language commonly used in web development. JavaScript is a very powerful client-side scripting language. JavaScript is used mainly for enhancing the interaction of a user with the webpage. In other words, you can make your webpage more lively and interactive, with the help of JavaScript. JavaScript is also being used widely in game development and Mobile application development.</p>
+	</section>
+	<section class="main-section" id="JavaScript">
+		<header>JavaScript</header>
+		<p>JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive. Where HTML and CSS are languages that give structure and style to web pages, JavaScript gives web pages interactive elements that engage a use.</p>
+		<p>JavaScript is a lightweight programming language(“scripting language”) and used to make web pages interactive. It can insert dynamic text into HTML. JavaScript is also known as browser’s language. JavaScript(JS) is not similar or related to Java. Both the languages have a C like a syntax and are widely used in client-side and server-side Web applications, but there are few similarities only.</p>
+		<code>(function(){
+          "use strict";
+           /* Start of your code */
+          function greetMe(yourName) {
+            alert('Hello ' + yourName);
+           }
+
+  greetMe('World');
+  /* End of your code */
+})();</code>
+		<ul>
+			<li>Variables</li>
+			<li>Functions</li>
+			<li>Control Flow</li>
+			<li>Promises</li>	
+			<li>Storage Parts</li>
+		</ul>
+	</section>
+	<section class="main-section" id="Variables">
+		<header>Variables</header>
+		<p>A variable is a symbolic name for (or reference to) information. The variable's name represents what information the variable contains. They are called variables because the represented information can change but the operations on the variable remain the same.</p>
+		<p> A JavaScript variable is simply a name of storage location. There are two types of variables in JavaScript : local variable and global variable. There are some rules while declaring a JavaScript variable (also known as identifiers). Name must start with a letter (a to z or A to Z), underscore( _ ), or dollar( $ ) sign.</p>
+		<p>Variables in a computer program are analogous to "Buckets" or "Envelopes" where information can be maintained and referenced. On the outside of the bucket is a name. When referring to the bucket, we use the name of the bucket, not the data stored in the bucket.</p>
+		<code>     
+          int age           = 15;       // set the users age 
+          int age_in_months = age * 12; // compute the users age in months 
+          int age_in_days   = age_in_months * 30;  // compute the approximate age in days 
+ 
+          int grades[4];    // create an arary 
+		}</code>
+	</section>
+	<section class="main-section" id="Scope">
+		<header>Scope</header>
+		<p>efers to the current context of code, which determines the accessibility of variables to JavaScript. The two types of scope are local and global:</p>
+		<p>Global variables are those declared outside of a block.</p>
+		<p>Local variables are those declared inside of a block</p>>
+		<code>if (true) {
+			var x = 5;
+		}
+	console.log(x); // S</code>
+	</section>
+	<section class="main-section" id="Functions">
+		<header>Functions</header>
+		<p>Function allows you to define a block of code, give it a name and then execute it as many times as you want. A function can be defined using function keyword and can be executed using () operator. A function can include one or more parameters.</p>
+		<code>var f = function () {
+};
+f();</code>
+	</section>
+</main>
+</div>
